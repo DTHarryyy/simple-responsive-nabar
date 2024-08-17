@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Outfit",sans-serif;
+}
+:root{
+    --cl-white: #f0f0f0;
+    --cl-black: #1111111
+}
+
+
+.logo{
+    text-decoration: none;
+    color: var(--cl-white);
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.navCon{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+body{
+    height: 100vh;
+    width: 100%;
+    background-color: #111111;
+}
+nav{
+    display: flex;
+    width: 1450px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+}
+nav ul{
+    display: flex;
+    gap: 20px;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a{
+    text-decoration: none;
+    color: var(--cl-white);
+    font-weight: 300;
+}
+.menu{
+    display: none;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 250px;
+    background-color: #E0E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px 15px;
+    font-size: 1.2rem;
+}
+.sidebar li{
+    margin: 15px 0;
+}
+.sidebar li a{
+    color: #111111;
+}
+@media (max-width: 700px) {
+    .menu{
+        display: block;
+    }
+    .hideOnMobile{
+        display: none;
+    }
+}
+@media (max-width: 260px) {
+    .sidebar{
+        width: 100%;
+    }
+}
